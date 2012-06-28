@@ -1,0 +1,3 @@
+django
+git+git://github.com/mjtorn/django-json-field.git@ad24ef558c489b38b234c20c65c4574eb6383dd9#egg=json_field
+
