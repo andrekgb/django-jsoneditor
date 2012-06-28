@@ -16,8 +16,10 @@ class JSONEditor(forms.Textarea):
     def render(self, name, value, attrs=None, **kwargs):
         rendered = super(JSONEditor, self).render(name, value, attrs=attrs, **kwargs)
 
+        field_id = attrs['id']
+
         context = {
-            'out': 'LOOOOOL 8=O',
+            'field_id': field_id,
         }
 
         return rendered +  mark_safe(render_to_string(
