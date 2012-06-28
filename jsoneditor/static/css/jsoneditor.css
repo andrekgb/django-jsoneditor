@@ -33,11 +33,11 @@
 }
 
 button.jsoneditor-collapsed {
-    background: url('img/treeRightTriangleBlack.png') no-repeat center;
+    background: url('../img/treeRightTriangleBlack.png') no-repeat center;
 }
 
 button.jsoneditor-expanded {
-    background: url('img/treeDownTriangleBlack.png') no-repeat center;
+    background: url('../img/treeDownTriangleBlack.png') no-repeat center;
 }
 
 button.jsoneditor-invisible {
@@ -64,52 +64,52 @@ button.jsoneditor-invisible {
 }
 
 button.jsoneditor-remove {
-    background: url('img/delete_gray.png') no-repeat center;
+    background: url('../img/delete_gray.png') no-repeat center;
 }
 button.jsoneditor-remove:hover {
-    background: url('img/delete_red.png') no-repeat center;
+    background: url('../img/delete_red.png') no-repeat center;
 }
 
 button.jsoneditor-append {
-    background: url('img/add_gray.png') no-repeat center;
+    background: url('../img/add_gray.png') no-repeat center;
 }
 button.jsoneditor-append:hover {
-    background: url('img/add_green.png') no-repeat center;
+    background: url('../img/add_green.png') no-repeat center;
 }
 
 button.jsoneditor-duplicate {
-    background: url('img/duplicate_gray.png') no-repeat center;
+    background: url('../img/duplicate_gray.png') no-repeat center;
 }
 button.jsoneditor-duplicate:hover {
-    background: url('img/duplicate_blue.png') no-repeat center;
+    background: url('../img/duplicate_blue.png') no-repeat center;
 }
 
 button.jsoneditor-type-string {
-    background: url('img/string_gray.png') no-repeat center;
+    background: url('../img/string_gray.png') no-repeat center;
 }
 button.jsoneditor-type-string:hover {
-    background: url('img/string_blue.png') no-repeat center;
+    background: url('../img/string_blue.png') no-repeat center;
 }
 
 button.jsoneditor-type-auto {
-    background: url('img/auto_gray.png') no-repeat center;
+    background: url('../img/auto_gray.png') no-repeat center;
 }
 button.jsoneditor-type-auto:hover {
-    background: url('img/auto_blue.png') no-repeat center;
+    background: url('../img/auto_blue.png') no-repeat center;
 }
 
 button.jsoneditor-type-object {
-    background: url('img/object_gray.png') no-repeat center;
+    background: url('../img/object_gray.png') no-repeat center;
 }
 button.jsoneditor-type-object:hover {
-    background: url('img/object_blue.png') no-repeat center;
+    background: url('../img/object_blue.png') no-repeat center;
 }
 
 button.jsoneditor-type-array {
-    background: url('img/array_gray.png') no-repeat center;
+    background: url('../img/array_gray.png') no-repeat center;
 }
 button.jsoneditor-type-array:hover {
-    background: url('img/array_blue.png') no-repeat center;
+    background: url('../img/array_blue.png') no-repeat center;
 }
 
 div.jsoneditor-select {
@@ -139,16 +139,16 @@ div.jsoneditor-option-object, div.jsoneditor-option-array {
     background-position: 4px center;
 }
 div.jsoneditor-option-string {
-    background-image: url('img/string_blue.png');
+    background-image: url('../img/string_blue.png');
 }
 div.jsoneditor-option-auto {
-    background-image: url('img/auto_blue.png');
+    background-image: url('../img/auto_blue.png');
 }
 div.jsoneditor-option-object {
-    background-image: url('img/object_blue.png');
+    background-image: url('../img/object_blue.png');
 }
 div.jsoneditor-option-array {
-    background-image: url('img/array_blue.png');
+    background-image: url('../img/array_blue.png');
 }
 div.jsoneditor-option-selected {
     background-color: #D5DDF6;
@@ -216,7 +216,7 @@ button.jsoneditor-dragarea {
     width: 16px;
     height: 16px;
     margin: 3px 0;
-    background: url('img/dots_gray.gif') top center;
+    background: url('../img/dots_gray.gif') top center;
     background-repeat: repeat-y;
     display: block;
     cursor: move;
