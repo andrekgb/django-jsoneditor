@@ -103,30 +103,7 @@ main.onMouseUp = function (event) {
 };
 
 main.load = function() {
-    var json = {
-        "Name": "John Smith",
-        "Age": 32,
-        "Employed": true,
-        "Address": {
-            "Street": "701 First Ave.",
-            "City": "Sunnyvale, CA 95125",
-            "Country": "United States"
-        },
-        "Children": [
-            {
-                "Name": "Richard",
-                "Age": 7
-            },
-            {
-                "Name": "Susan",
-                "Age": 4
-            },
-            {
-                "Name": "James",
-                "Age": 3
-            }
-        ]
-    };
+    var json = INITIAL_JSON;
 
     try {
         // formatter
