@@ -1,5 +1,8 @@
 <script type="text/javascript">
     STATIC_URL = '{{ STATIC_URL }}';
+    FIELD_ID = '{{ field_id }}';
+
+    INITIAL_JSON = eval(document.getElementById(FIELD_ID).value);
 </script>
 
 <div id="jsonformatter"></div>
