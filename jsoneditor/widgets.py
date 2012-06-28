@@ -4,6 +4,8 @@ from django.template.loader import render_to_string
 
 from django.utils.safestring import mark_safe
 
+from django.conf import settings
+
 from django import forms
 
 class JSONEditor(forms.Textarea):
@@ -20,6 +22,7 @@ class JSONEditor(forms.Textarea):
 
         context = {
             'field_id': field_id,
+            'STATIC_URL': settings.STATIC_URL,
         }
 
         return rendered +  mark_safe(render_to_string(
