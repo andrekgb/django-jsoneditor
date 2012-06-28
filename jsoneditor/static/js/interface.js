@@ -130,7 +130,7 @@ main.load = function() {
 
     try {
         // formatter
-        var container = document.getElementById("jsonformatter");
+        var container = document.getElementById(FIELD_ID);
         formatter = new JSONFormatter(container);
         formatter.set(json);
         formatter.onError = function (err) {
@@ -200,7 +200,7 @@ main.splitterFraction = 0.5;
 
 main.resize = function() {
     var domEditor = document.getElementById('jsoneditor');
-    var domFormatter = document.getElementById('jsonformatter');
+    var domFormatter = document.getElementById(FIELD_ID);
     var domSplitter = document.getElementById('splitter');
     var domAd = document.getElementById('ad');
 
