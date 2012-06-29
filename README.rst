@@ -16,8 +16,6 @@ Requirements
 ------------
 
 https://github.com/derek-schaefer/django-json-field
-or
-https://github.com/mjtorn/django-json-field
 
 (See ``reqs.txt``)
 
