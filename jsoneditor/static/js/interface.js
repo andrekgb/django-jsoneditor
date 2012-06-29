@@ -129,7 +129,7 @@ main.load = function() {
         JSONEditor.Events.addEventListener(domSplitter, "mousedown", main.onMouseDown);
 
         // resize
-        JSONEditor.Events.addEventListener(window, 'resize', main.resize);
+        //JSONEditor.Events.addEventListener(window, 'resize', main.resize);
 
         // TODO: implement a focus method
         formatter.textarea.focus();
