@@ -1,4 +1,4 @@
-include setup.py
+include setup.py MANIFEST MANIFEST.in
 include LICENSE NOTICE README.rst
 
 recursive-include jsoneditor/ *py
