@@ -5,7 +5,7 @@
 
     JSONEDITOR = document.getElementById(JSONEDITOR_ID);
     FIELD = document.getElementById(FIELD_ID);
-    INITIAL_JSON = {{ value|safe }};
+    INITIAL_JSON = {% if value %}{{ value|safe }}{% else %}""{% endif %};
     FIELD.value = JSON.stringify(INITIAL_JSON);
 
     function updateHidden() {
