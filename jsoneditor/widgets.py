@@ -24,6 +24,7 @@ class JSONEditor(forms.widgets.Widget):
         context = {
             'field_id': field_id,
             'field': field,
+            'value': value,
             'STATIC_URL': settings.STATIC_URL,
         }
 
