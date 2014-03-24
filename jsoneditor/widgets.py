@@ -8,30 +8,28 @@ from django.conf import settings
 
 from django import forms
 
-class JSONEditor(forms.Textarea):
+class JSONEditor(forms.widgets.Widget):
     class Media:
         css = {
-            'all': ('css/jsoneditor.css',),
+            'all': ('jsoneditor.css',),
         }
-        js = ('js/jsoneditor-min.js', 'js/interface.js')
+        js = ('jsoneditor.js',)
 
     def render(self, name, value, attrs=None, **kwargs):
-        rendered = super(JSONEditor, self).render(name, value, attrs=attrs, **kwargs)
-
         field_id = attrs['id']
         field = field_id.split('_', 1)[1]
 
         context = {
             'field_id': field_id,
             'field': field,
+            'value': value or '',
             'STATIC_URL': settings.STATIC_URL,
         }
 
-        pre_html = mark_safe(render_to_string('jsoneditor/jsoneditor_pre.html', context))
         widget_html = mark_safe(render_to_string('jsoneditor/jsoneditor_widget.html', context))
         post_html = mark_safe(render_to_string('jsoneditor/jsoneditor_post.html', context))
 
-        return pre_html + rendered + widget_html + post_html
+        return widget_html + post_html
 
 
 # EOF

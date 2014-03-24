@@ -1,11 +1,22 @@
 <script type="text/javascript">
+    JSONEDITOR_ID = 'jsoneditor';
     STATIC_URL = '{{ STATIC_URL }}';
     FIELD_ID = '{{ field_id }}';
 
-    INITIAL_JSON = JSON.parse(document.getElementById(FIELD_ID).value);
-</script>
+    JSONEDITOR = document.getElementById(JSONEDITOR_ID);
+    FIELD = document.getElementById(FIELD_ID);
+    INITIAL_JSON = {% if value %}{{ value|safe }}{% else %}""{% endif %};
+    FIELD.value = JSON.stringify(INITIAL_JSON);
 
-<script type="text/javascript">
-    main.load();
-    //main.resize();
+    function updateHidden() {
+        var json = editor.get();
+        FIELD.value = JSON.stringify(json);
+    }
+
+    options = {
+        'change': updateHidden
+    }
+
+    editor = new jsoneditor.JSONEditor(JSONEDITOR, options);
+    editor.set(INITIAL_JSON);
 </script>
