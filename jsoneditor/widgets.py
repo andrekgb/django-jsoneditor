@@ -11,9 +11,9 @@ from django import forms
 class JSONEditor(forms.widgets.Widget):
     class Media:
         css = {
-            'all': ('css/jsoneditor.css',),
+            'all': ('jsoneditor.css',),
         }
-        js = ('js/jsoneditor-min.js', 'js/interface.js')
+        js = ('jsoneditor.js',)
 
     def render(self, name, value, attrs=None, **kwargs):
         rendered = super(JSONEditor, self).render(name, value, attrs=attrs, **kwargs)
