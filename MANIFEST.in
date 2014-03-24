@@ -3,9 +3,9 @@ include LICENSE NOTICE README.rst
 
 recursive-include jsoneditor *py
 
-recursive-include jsoneditor/static/css *css
+recursive-include jsoneditor/static *css
 recursive-include jsoneditor/static/img *gif *png
-recursive-include jsoneditor/static/js *js
+recursive-include jsoneditor/static *js
 
 recursive-include jsoneditor/templates *html
 
