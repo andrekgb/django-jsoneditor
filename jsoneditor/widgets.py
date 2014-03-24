@@ -16,8 +16,6 @@ class JSONEditor(forms.widgets.Widget):
         js = ('jsoneditor.js',)
 
     def render(self, name, value, attrs=None, **kwargs):
-        rendered = super(JSONEditor, self).render(name, value, attrs=attrs, **kwargs)
-
         field_id = attrs['id']
         field = field_id.split('_', 1)[1]
 
@@ -32,7 +30,7 @@ class JSONEditor(forms.widgets.Widget):
         widget_html = mark_safe(render_to_string('jsoneditor/jsoneditor_widget.html', context))
         post_html = mark_safe(render_to_string('jsoneditor/jsoneditor_post.html', context))
 
-        return pre_html + rendered + widget_html + post_html
+        return pre_html + widget_html + post_html
 
 
 # EOF
