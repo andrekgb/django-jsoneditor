@@ -2,10 +2,9 @@
     STATIC_URL = '{{ STATIC_URL }}';
     FIELD_ID = '{{ field_id }}';
 
-    INITIAL_JSON = JSON.parse(document.getElementById(FIELD_ID).value);
-</script>
+    CONTAINER = document.getElementById(FIELD_ID);
+    INITIAL_JSON = {{ value|safe }};
 
-<script type="text/javascript">
-    main.load();
-    //main.resize();
+    editor = new jsoneditor.JSONEditor(CONTAINER);
+    editor.set(INITIAL_JSON);
 </script>
