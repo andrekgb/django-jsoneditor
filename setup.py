@@ -6,7 +6,7 @@ URL = 'https://github.com/mjtorn/django-jsoneditor'
 
 import jsoneditor
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 description = 'Django JSON editor'
 
@@ -21,7 +21,8 @@ setup(
     author_email = AUTHOR_EMAIL,
     url = URL,
     long_description = long_description,
-    packages = ['jsoneditor'],
+    packages = find_packages(),
+    include_package_data = True,
 )
 
 # EOF
