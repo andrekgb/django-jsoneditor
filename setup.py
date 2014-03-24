@@ -21,7 +21,7 @@ setup(
     author_email = AUTHOR_EMAIL,
     url = URL,
     long_description = long_description,
-    # packages = ['jsoneditor'],
+    packages = ['jsoneditor'],
 )
 
 # EOF
