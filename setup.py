@@ -10,11 +10,8 @@ from setuptools import setup
 
 description = 'Django JSON editor'
 
-try:
-    with open('README.rst') as f:
-        long_description = f.read()
-except IOError:
-    long_description = description
+with open('README.rst') as f:
+    long_description = f.read()
 
 setup(
     name = 'django-jsoneditor',
@@ -24,7 +21,7 @@ setup(
     author_email = AUTHOR_EMAIL,
     url = URL,
     long_description = long_description,
-    packages = ['jsoneditor'],
+    # packages = ['jsoneditor'],
 )
 
 # EOF
