@@ -26,11 +26,10 @@ class JSONEditor(forms.widgets.Widget):
             'STATIC_URL': settings.STATIC_URL,
         }
 
-        pre_html = mark_safe(render_to_string('jsoneditor/jsoneditor_pre.html', context))
         widget_html = mark_safe(render_to_string('jsoneditor/jsoneditor_widget.html', context))
         post_html = mark_safe(render_to_string('jsoneditor/jsoneditor_post.html', context))
 
-        return pre_html + widget_html + post_html
+        return widget_html + post_html
 
 
 # EOF
