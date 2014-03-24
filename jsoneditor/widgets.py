@@ -8,7 +8,7 @@ from django.conf import settings
 
 from django import forms
 
-class JSONEditor(forms.Textarea):
+class JSONEditor(forms.widgets.Widget):
     class Media:
         css = {
             'all': ('css/jsoneditor.css',),
